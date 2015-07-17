@@ -1,7 +1,0 @@
-/// <reference path="upper-case-first.d.ts" />
-
-import upperCaseFirst = require('upper-case-first');
-
-console.log(upperCase(null));       	 // => ""
-console.log(upperCase('string'));  	 //
-

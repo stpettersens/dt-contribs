@@ -1,0 +1,16 @@
+	function isUpper(string: string): boolean;
+        function isLower(string: string): boolean;
+        function upper(string: any, locale?: string): string;
+        function ucFirst(string: string): string;
+	function lcFirst(string: string): string;
+        function lower(string: any, locale?: string): string;
+	function sentence(string: string, locale?: string, repl?: string): string
+        function title(string: string, locale?: string): string;
+        function camel(string: string, locale?: string): string;
+        function pascal(string: string, locale?: string): string;
+        function snake(string: string, locale?: string): string;
+       	function param(string: string, locale?: string): string;
+        function dot(string: string, locale?: string): string;
+	function path(string: string, locale?: string): string;
+        function constant(string: string, locale?: string): string;
+        function swap(string: string, locale?: string): string;

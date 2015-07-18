@@ -2,9 +2,9 @@
   "name": "dt-contribs-test-runner",
   "version": "1.0.0",
   "description": "Test runner for dt-contribs",
-  "main": "runner.js",
+  "main": "dt-test-runner.js",
   "scripts": {
-    "test": "echo n/a"
+    "test": "echo I am the test runner!"
   },
   "repository": {
     "type": "git",

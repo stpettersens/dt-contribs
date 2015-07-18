@@ -1,6 +1,7 @@
 var glob = require('glob'),
     exec = require('child_process').exec;
-
+    
+console.log('Is this a CI environment? %s', process.env.CI);
 console.log('Invoked dt-contribs test runner...');
 glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {

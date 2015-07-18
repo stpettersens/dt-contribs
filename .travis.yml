@@ -1,6 +1,6 @@
 #
 # Travis-CI configuration for dt-contribs.
-#
+# Will probably fail; might need sudo.
 
 language: node_js
 node_js:

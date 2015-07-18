@@ -5,10 +5,7 @@ console.log('Invoked dt-contribs test runner...');
 glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {
 	process.chdir(modules[i]);
-	exec('npm install', function(err, stdout, stderr) {
-	    console.log(stdout);
-	    console.log(stderr);
-	});
+	exec('npm install', function(err, stdout, stderr) {});
 	exec('npm test', function(err, stdout, stderr) {
 	   console.log(stdout);
 	   console.log(stderr);
@@ -16,4 +13,3 @@ glob('*/', function(err, modules) {
 	process.chdir('..');
     }
 });
-

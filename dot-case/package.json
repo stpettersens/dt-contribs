@@ -1,0 +1,18 @@
+{
+  "name": "dt-dot-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for dot-case",
+  "main": "dot-case.d.ts",
+  "dependencies": {
+    "dot-case": "~1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs dot-case-tests.ts && node dot-case-tests.js"
+  },
+  "keywords": [
+    "dot-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dt-random-string",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for random-string",
+  "main": "random-string.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs random-string-tests.ts && node random-string-tests.js"
+  },
+  "keywords": [
+    "random-string"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT",
+  "dependencies": {
+    "random-string": "~0.1.2"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "dt-shortid",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for shortid",
+  "main": "shortid.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs shortid-tests.ts && node shortid-tests.js"
+  },
+  "keywords": [
+    "shortid"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT",
+  "dependencies": {
+    "shortid": "~2.2.2"
+  }
+}

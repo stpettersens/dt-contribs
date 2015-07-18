@@ -1,0 +1,17 @@
+{
+  "name": "dt-cson",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for cson",
+  "main": "cson.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs cson-tests.ts && node cson-tests.js"
+  },
+  "keywords": [
+    "cson"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT",
+  "dependencies": {
+    "cson": "~3.0.1"
+  }
+}

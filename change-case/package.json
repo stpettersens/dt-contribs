@@ -1,0 +1,18 @@
+{
+  "name": "dt-change-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for change-case",
+  "main": "change-case.d.ts",
+  "dependencies": {
+    "change-case": "~2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs change-case-tests.ts && node change-case-tests.js"
+  },
+  "keywords": [
+    "change-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

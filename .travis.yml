@@ -1,0 +1,12 @@
+#
+# Travis-CI configuration for dt-contribs.
+#
+
+language: node_js
+node_js:
+    - "0.10"
+    - 0.11
+
+before_script: npm install -g typescript
+script: node runner.js
+

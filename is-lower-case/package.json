@@ -1,0 +1,18 @@
+{
+  "name": "dt-is-lower-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for is-lower-case",
+  "main": "is-lower-case.d.ts",
+  "dependencies": {
+    "is-lower-case": "~1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs is-lower-case-tests.ts && node is-lower-case-tests.js"
+  },
+  "keywords": [
+    "is-lower-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "dt-lower-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for lower-case",
+  "main": "lower-case.d.ts",
+  "dependencies": {
+    "lower-case": "~1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs lower-case-tests.ts && node lower-case-tests.js"
+  },
+  "keywords": [
+    "lower-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

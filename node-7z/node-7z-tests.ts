@@ -1,4 +1,3 @@
-/// <reference path="../node/node.d.ts" />
 /// <reference path="../glob/glob.d.ts" />
 /// <reference path="node-7z.d.ts" />
 

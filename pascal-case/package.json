@@ -1,0 +1,18 @@
+{
+  "name": "dt-pascal-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for pascal-case",
+  "main": "pascal-case.d.ts",
+  "dependencies": {
+    "pascal-case": "~1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs pascal-case-tests.ts && node pascal-case-tests.js"
+  },
+  "keywords": [
+    "pascal-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

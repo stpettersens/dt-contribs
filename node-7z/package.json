@@ -1,0 +1,19 @@
+{
+  "name": "dt-node-7z",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for node-7z",
+  "main": "node-7z.d.ts",
+  "dependencies": {
+    "glob": "~5.0.14",
+    "node-7z": "~0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo //TODO"
+  },
+  "keywords": [
+    "node-7z"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

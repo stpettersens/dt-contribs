@@ -1,0 +1,18 @@
+{
+  "name": "dt-magic-number",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for magic-number",
+  "main": "magic-number.d.ts",
+  "dependencies": {
+    "magic-number": "~0.1.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo //TODO"
+  },
+  "keywords": [
+    "magic-number"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

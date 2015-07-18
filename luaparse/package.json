@@ -1,0 +1,17 @@
+{
+  "name": "dt-luaparse",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for luaparse",
+  "main": "luaparse.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs luaparse-tests.ts && node luaparse-tests.js"
+  },
+  "keywords": [
+    "luaparse"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT",
+  "dependencies": {
+    "luaparse": "~0.1.15"
+  }
+}

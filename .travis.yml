@@ -6,6 +6,6 @@ language: node_js
 node_js:
     - "0.10"
 
-before_script: npm install -g typescript # Need to compile TypeScript definitions and test files.
+before_script: npm install -g typescript # Needed to compile TypeScript definitions and test files.
 script: npm test # Invoke dt-contribs test runner.
 

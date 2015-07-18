@@ -8,5 +8,5 @@ node_js:
     - 0.11
 
 before_script: npm install -g typescript
-script: node runner.js
+script: node dt-test-runner.js
 

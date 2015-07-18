@@ -1,0 +1,18 @@
+{
+  "name": "dt-upper-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for upper-case",
+  "main": "upper-case.d.ts",
+  "dependencies": {
+    "upper-case": "~1.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs upper-case-tests.ts && node upper-case-tests.js"
+  },
+  "keywords": [
+    "upper-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

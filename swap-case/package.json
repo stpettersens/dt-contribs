@@ -1,0 +1,18 @@
+{
+  "name": "dt-swap-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for swap-case",
+  "main": "swap-case.d.ts",
+  "dependencies": {
+    "swap-case": "~1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs swap-case-tests.ts && node swap-case-tests.js"
+  },
+  "keywords": [
+    "swap-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "dt-upper-case-first",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for upper-case-first",
+  "main": "upper-case-first.d.ts",
+  "dependencies": {
+    "upper-case-first": "~1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "tsc --module commonjs upper-case-first-tests.ts && node upper-case-first-tests.js"
+  },
+  "keywords": [
+    "upper-case-first"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT"
+}

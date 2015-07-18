@@ -1,0 +1,17 @@
+{
+  "name": "dt-title-case",
+  "version": "0.0.0",
+  "description": "Type definitions and tests for title-case",
+  "main": "title-case.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs title-case-tests.ts && node title-case-tests.js"
+  },
+  "keywords": [
+    "title-case"
+  ],
+  "author": "Sam Saint-Pettersen",
+  "license": "MIT",
+  "dependencies": {
+    "title-case": "~1.1.1"
+  }
+}

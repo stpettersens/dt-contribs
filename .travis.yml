@@ -8,4 +8,3 @@ node_js:
 
 before_script: npm install -g typescript # Needed to compile TypeScript definitions and test files.
 script: npm test # Invoke dt-contribs test runner.
-

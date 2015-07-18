@@ -8,7 +8,6 @@ glob('*/', function(err, modules) {
 	exec('npm install', function(err, stdout, stderr) {});
 	exec('npm test', function(err, stdout, stderr) {
 	   console.log(stdout);
-	   console.log(stderr);
 	});
 	process.chdir('..');
     }

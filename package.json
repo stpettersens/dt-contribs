@@ -4,7 +4,7 @@
   "description": "Test runner for dt-contribs",
   "main": "dt-test-runner.js",
   "scripts": {
-    "test": "echo I am the test runner!"
+    "test": "node dt-test-runner.js"
   },
   "repository": {
     "type": "git",

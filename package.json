@@ -19,6 +19,6 @@
     "url": "https://github.com/stpettersens/dt-contribs/issues"
   },
   "dependencies": {
-    "dt-glob": "0.0.0"
+    "glob": ">0.0.0"
   }
 }

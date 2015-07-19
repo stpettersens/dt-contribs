@@ -2,11 +2,11 @@
 # Travis-CI configuration for dt-contribs.
 #
 
-sudo: true
+sudo: false
 language: node_js
 node_js:
     - 0.12
 
 # Needed to compile TypeScript definitions and test files.
-before_script: sudo apt-get install p7zip && npm install -g typescript 
+before_script: npm install -g typescript 
 script: npm test # Invoke dt-contribs test runner.

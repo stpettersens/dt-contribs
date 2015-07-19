@@ -1,0 +1,16 @@
+{
+  "name": "dt-git-config",
+  "version": "0.0.0",
+  "main": "git-config.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs git-config-tests.ts && node git-config-tests.js"
+  },
+  "keywords": [
+    "type definitions git-config"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "git-config": "0.0.7"
+  }
+}

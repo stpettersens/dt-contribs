@@ -4,7 +4,7 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare module "glob" {
-	export function glob(pattern: string, options?: Object): any;
+	export function glob(pattern: string, options?: Object): void;
 	export function sync(pattern: string, options?: Object): string[];
 	export function hasMagic(pattern: string, options?: Object): boolean;
 }

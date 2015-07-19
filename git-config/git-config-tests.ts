@@ -7,5 +7,3 @@ console.log(JSON.stringify(config));
 
 config = gitConfig.sync('gitconfig'); // => Object as gitconfig definitely exists.
 console.log(JSON.stringify(config));
-
-

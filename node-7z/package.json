@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo //TODO"
+    "test": "./tests"
   },
   "keywords": [
     "node-7z"

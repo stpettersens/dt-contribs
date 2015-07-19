@@ -1,0 +1,5 @@
+#!/bin/sh
+tsc --module commonjs node-7z-tests.ts > /dev/null
+node node-7z-tests.js
+rm *.7z *.js
+

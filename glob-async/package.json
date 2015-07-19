@@ -6,7 +6,7 @@
     "test": "tsc --module commonjs glob-async-tests.ts && node glob-async-tests.js"
   },
   "keywords": [
-    "type definitions glob-async"
+    "type definitions glob async"
   ],
   "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
   "dependencies": {

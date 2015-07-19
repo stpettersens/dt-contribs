@@ -1,0 +1,16 @@
+{
+  "name": "dt-git-config-async",
+  "version": "0.0.0",
+  "main": "git-config-async.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs git-config-async-tests.ts && node git-config-async-tests.js"
+  },
+  "keywords": [
+    "type definitions git-config async"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "git-config": "0.0.7"
+  }
+}

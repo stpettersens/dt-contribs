@@ -3,5 +3,3 @@ wget --quiet https://raw.githubusercontent.com/gouch/to-title-case/master/to-tit
 tsc --module commonjs to-title-case-gouch-tests.ts > /dev/null
 node to-title-case-gouch-tests.js
 rm *.js
-
-

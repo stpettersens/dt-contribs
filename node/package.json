@@ -1,0 +1,11 @@
+{
+  "name": "dt-node",
+  "version": "0.0.0",
+  "description": "",
+  "main": "node.d.ts",
+  "scripts": {
+    "test": "echo No test, skipping..."
+  },
+  "author": "",
+  "license": "?"
+}

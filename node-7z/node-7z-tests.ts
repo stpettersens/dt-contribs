@@ -9,4 +9,3 @@ z7a.add('tds.7z', ['node-7z.d.ts', 'node-7z-tests.ts']);
 var files: string[] = glob.sync('*.7z');
 console.log('7z archive created:');
 console.log(files[0]);
-

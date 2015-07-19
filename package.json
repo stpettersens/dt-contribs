@@ -13,7 +13,7 @@
   "keywords": [
     "dt-contribs-test-runner"
   ],
-  "author": "Sam Saint-Pettersen",
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/stpettersens/dt-contribs/issues"

@@ -23,3 +23,4 @@ glob('*/', function(err, modules) {
         process.chdir('..');
     }
 });
+// ;)

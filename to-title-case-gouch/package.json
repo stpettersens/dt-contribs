@@ -1,7 +1,7 @@
 {
   "name": "dt-to-title-case-gouch",
   "version": "0.0.0",
-  "description": "Type definitions and tests for gouch's to-title-case",
+  "description": "Type definitions and tests for David Gouch's to-title-case",
   "main": "to-title-case-gouch.d.ts",
   "scripts": {
     "test": "./tests"

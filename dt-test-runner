@@ -12,14 +12,14 @@ glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {
     	process.chdir(modules[i]);
     	if(modules.indexOf('package.json')) {
-        exec('npm install', function() {});
-      }
-      if(modules.indexOf('bower.json')) {
-        exec('bower install', function() {});
-      }
-    	exec('npm test', function(err, stdout, stderr) {
-    	   console.log(stdout);
-    	});
-    	process.chdir('..');
+            exec('npm install', function() {});
+        }
+        if(modules.indexOf('bower.json')) {
+            exec('bower install', function() {});
+        }
+        exec('npm test', function(err, stdout, stderr) {
+            console.log(stdout);
+        });
+        process.chdir('..');
     }
 });

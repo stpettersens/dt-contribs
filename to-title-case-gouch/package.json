@@ -4,7 +4,7 @@
   "description": "Type definitions and tests for David Gouch's to-title-case",
   "main": "to-title-case-gouch.d.ts",
   "scripts": {
-    "test": "tsc --module commonjs to-title-case-gouch.d.ts && node to-title-case-gouch.js"
+    "test": "tsc --module commonjs to-title-case-gouch-tests.ts && node to-title-case-gouch-tests.js"
   },
   "keywords": [
     "typescript definitions to-title-case-gouch"

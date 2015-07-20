@@ -1,0 +1,24 @@
+{
+    "name": "dt-to-title-case-gouch",
+    "version": "0.0.0",
+    "description": "TypeScript definitions and tests for to-title-case-gouch",
+    "main": "to-title-case-gouch.d.ts",
+    "dependencies": {
+        "to-title-case-gouch": "latest"
+    },
+    "authors": [
+        "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
+    ],
+    "keywords": [
+        "type",
+        "definitions",
+        "to-title-case-gouch"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

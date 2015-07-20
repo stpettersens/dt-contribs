@@ -1,11 +1,13 @@
 #
 # Travis-CI configuration for dt-contribs.
 #
+
 sudo: false
 language: node_js
 node_js:
     - "0.10"
 
 # Install TypeScript compiler to compile definitions and test files.
-before_script: npm install -g typescript 
+# Install Bower which is used to retrieve client-side dependencies.
+before_script: npm install -g typescript bower
 script: npm test # Invoke dt-contribs test runner.

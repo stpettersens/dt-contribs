@@ -10,8 +10,5 @@
     "typescript definitions to-title-case-gouch"
   ],
   "author": "Sam Saint-Pettersen",
-  "license": "MIT",
-  "dependencies": {
-    "glob": ">= 5.0.14"
-  }
+  "license": "MIT"
 }

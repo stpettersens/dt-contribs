@@ -4,10 +4,10 @@
   "description": "Type definitions and tests for David Gouch's to-title-case",
   "main": "to-title-case-gouch.d.ts",
   "scripts": {
-    "test": "./tests"
+    "test": "tsc --module commonjs to-title-case-gouch.d.ts && node to-title-case-gouch.js"
   },
   "keywords": [
-    "typescript definitions to-title-case gouch"
+    "typescript definitions to-title-case-gouch"
   ],
   "author": "Sam Saint-Pettersen",
   "license": "MIT"

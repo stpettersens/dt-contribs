@@ -17,11 +17,9 @@ glob('*/', function(err, modules) {
         if(modules.indexOf('bower.json') != -1) {
             exec('bower install', function() {});
         }
-        if(modules.indexOf('package.json') != -1) {
-            exec('npm test', function(err, stdout, stderr) {
-                console.log(stdout);
-            });
-        }
+        exec('npm test', function(err, stdout, stderr) {
+            console.log(stdout);
+        });
         process.chdir('..');
     }
 });

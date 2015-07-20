@@ -11,15 +11,17 @@ if(!process.env.CI) {
 glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {
     	process.chdir(modules[i]);
-    	if(modules.indexOf('package.json')) {
+    	if(modules.indexOf('package.json') != -1) {
             exec('npm install', function() {});
         }
-        if(modules.indexOf('bower.json')) {
+        if(modules.indexOf('bower.json') != -1) {
             exec('bower install', function() {});
         }
-        exec('npm test', function(err, stdout, stderr) {
-            console.log(stdout);
-        });
+        if(modules.indexOf('package.json') != -1) {
+            exec('npm test', function(err, stdout, stderr) {
+                console.log(stdout);
+            });
+        }
         process.chdir('..');
     }
 });

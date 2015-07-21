@@ -19,8 +19,6 @@
     "url": "https://github.com/stpettersens/dt-contribs/issues"
   },
   "dependencies": {
-    "glob": ">= 5.0.14",
-    "gulp": "~3.9.0",
-    "gulp-typescript": "~2.8.0"
+    "glob": ">= 5.0.14"
   }
 }

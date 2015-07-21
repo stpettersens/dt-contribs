@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "magic-number.d.ts",
   "scripts": {
-    "test": "./tests"
+    "test": "tsc --module commonjs magic-number-tests.ts; node magic-number-tests.js"
   },
   "keywords": [
     "type definitions magic-number"

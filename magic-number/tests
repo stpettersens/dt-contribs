@@ -1,5 +1,0 @@
-#!/bin/sh
-tsc --module commonjs magic-number-tests.ts > /dev/null
-node magic-number-tests.js
-rm *.js
-

@@ -22,7 +22,7 @@ glob('*/', function(err, modules) {
                 if(stderr.length > 0) {
                     console.log('AN ERROR OCCURRED! (҂⌣̀_⌣́)');
                     console.log(stderr);
-                    //process.exit(1);
+                    process.exit(1);
                 }
             });
         }

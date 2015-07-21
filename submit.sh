@@ -1,6 +1,6 @@
 #!/bin/sh
-# Publish a module here to my DefinitelyTyped fork.
-# Usage: sh publish module_name
+# Submit a module here to my DefinitelyTyped fork.
+# Usage: sh submit.sh module_name
 
 mkdir ../DefinitelyTyped/$1
 cp $1/$1.d.ts ../DefinitelyTyped/$1

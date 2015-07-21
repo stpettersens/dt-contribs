@@ -11,7 +11,7 @@ if(!process.env.CI) {
 glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {
     	process.chdir(modules[i]);
-    	var files = glob('*.json');
+    	var files = glob.sync('*.json');
         if(files.indexOf('bower.json') != -1) {
             exec('bower install', function() {});
         }

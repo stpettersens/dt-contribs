@@ -11,4 +11,3 @@ node_js:
 # Install Bower which is used to retrieve client-side dependencies.
 before_script: npm install -g typescript bower
 script: npm test # Invoke dt-contribs test runner.
-# ( •̀ω•́ )σ

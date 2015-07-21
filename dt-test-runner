@@ -11,22 +11,21 @@ if(!process.env.CI) {
 glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {
     	process.chdir(modules[i]);
-    	glob('*', function(err, files) {
-            if(files.indexOf('bower.json') != -1) {
-                exec('bower install', function() {});
-            }
-            if(files.indexOf('package.json') != -1) {
-                exec('npm install', function() {});
-                exec('npm test', function(err, stdout, stderr) {
-                    console.log(stdout);
-                    if(stderr.length > 0) {
-                        console.log('AN ERROR OCCURRED! ᕙ( ︡’︡益’︠)ง');
-                        console.log(stderr);
-                        process.exit(1);
-                    }
-                });
-            }
-    	});
+    	var files = glob('*.json');
+        if(files.indexOf('bower.json') != -1) {
+            exec('bower install', function() {});
+        }
+        if(files.indexOf('package.json') != -1) {
+            exec('npm install', function() {});
+            exec('npm test', function(err, stdout, stderr) {
+                console.log(stdout);
+                if(stderr.length > 0) {
+                    console.log('AN ERROR OCCURRED! (҂⌣̀_⌣́)');
+                    console.log(stderr);
+                    process.exit(1);
+                }
+            });
+        }
         process.chdir('..');
     }
 });

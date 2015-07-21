@@ -1,3 +1,0 @@
-#!/bin/sh
-tsc --module commonjs to-title-case-gouch-tests.ts > /dev/null
-node to-title-case-gouch-tests.js

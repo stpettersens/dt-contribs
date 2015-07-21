@@ -1,0 +1,17 @@
+{
+  "name": "dt-jquery-ui-tooltip",
+  "version": "0.0.0",
+  "description": "TypeScript definitions and tests for jquery-ui-tooltip",
+  "main": "jquery-ui-tooltip.d.ts",
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "type definitions jquery-ui-tooltip"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.8.0"
+  }
+}

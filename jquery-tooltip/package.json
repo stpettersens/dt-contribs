@@ -1,19 +1,13 @@
 {
-  "name": "dt-jquery-tooltip",
-  "version": "0.0.0",
-  "description": "Type definitions and tests for jquery-tooltip",
-  "main": "jquery-tooltip.d.ts",
-  "dependencies": {
-    "jquery": "~2.1.4",
-    "node-jsdom": "~3.1.5"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo //TODO"
-  },
-  "keywords": [
-    "jquery-tooltip"
-  ],
-  "author": "Sam Saint-Pettersen",
-  "license": "MIT"
+    "name": "dt-jquery-tooltip",
+    "version": "0.0.0",
+    "description": "TypeScript definitions and tests for jquery-tooltip",
+    "main": "jquery-tooltip.d.ts",
+    "scripts": {
+        "test": "tsc --module commonjs jquery-tooltip-tests.ts && node jquery-tooltip-tests.js"
+    },
+    "keywords": [
+        "type definitions jquery-tooltip"
+    ],
+    "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
 }

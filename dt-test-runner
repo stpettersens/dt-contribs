@@ -11,16 +11,21 @@ if(!process.env.CI) {
 glob('*/', function(err, modules) {
     for(var i = 0; i < modules.length; i++) {
     	process.chdir(modules[i]);
-    	if(modules.indexOf('package.json') != -1) {
-            exec('npm install', function() {});
-        }
-        if(modules.indexOf('bower.json') != -1) {
-            exec('bower install', function() {});
-        }
-        exec('npm test', function(err, stdout, stderr) {
-            console.log(stdout);
-            console.log(stderr);
-        });
+    	glob('*', function(err, files) {
+            if(files.indexOf('bower.json') != -1) {
+                exec('bower install', function() {});
+            }
+            if(files.indexOf('package.json') != -1) {
+                exec('npm install', function() {});
+                exec('npm test', function(err, stdout, stderr) {
+                    console.log(stdout);
+                    if(stderr.length > 0) {
+                        console.log('AN ERROR OCCURRED! ᕙ( ︡’︡益’︠)ง');
+                        consolelog(stderr);
+                    }
+                });
+            }
+    	});
         process.chdir('..');
     }
 });

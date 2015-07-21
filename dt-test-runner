@@ -21,7 +21,7 @@ glob('*/', function(err, modules) {
                     console.log(stdout);
                     if(stderr.length > 0) {
                         console.log('AN ERROR OCCURRED! ᕙ( ︡’︡益’︠)ง');
-                        consolelog(stderr);
+                        console.log(stderr);
                     }
                 });
             }

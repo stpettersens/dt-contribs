@@ -16,15 +16,14 @@ glob('*/', function(err, modules) {
             exec('bower install', function() {});
         }
         if(files.indexOf('package.json') != -1) {
-            exec('npm install', function() {
-                exec('npm test', function(err, stdout, stderr) {
-                    console.log(stdout);
-                    if(stderr.length > 0) {
-                        console.log('AN ERROR OCCURRED! (҂⌣̀_⌣́)');
-                        console.log(stderr);
-                        process.exit(1);
-                    }
-                });
+            exec('npm install', function() {});
+            exec('npm test', function(err, stdout, stderr) {
+                console.log(stdout);
+                if(stderr.length > 0) {
+                    console.log('AN ERROR OCCURRED! (҂⌣̀_⌣́)');
+                    console.log(stderr);
+                    process.exit(1);
+                }
             });
         }
         process.chdir('..');

@@ -28,4 +28,4 @@ glob('*/', function(err, modules) {
         }
         process.chdir('..');
     }
-}); # SBABE
+}); // SBABE

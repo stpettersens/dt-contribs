@@ -1,5 +1,4 @@
 node_modules/
-dt-init-config.json
 *.js
 *.log
 

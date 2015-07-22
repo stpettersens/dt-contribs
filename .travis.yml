@@ -9,6 +9,5 @@ node_js:
 
 # Install TypeScript compiler to compile most definitions and test files.
 # Install Bower which is used to retrieve client-side dependencies.
-# Install Gulp which is used to compile some definitions and tests.
-before_script: npm install -g typescript bower gulp
+before_script: npm install -g typescript bower
 script: npm test # Invoke dt-contribs test runner.

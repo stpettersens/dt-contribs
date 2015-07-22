@@ -4,7 +4,7 @@
   "description": "TypeScript definitions and tests for jquery-ui-tooltip",
   "main": "jquery-ui-tooltip.d.ts",
   "scripts": {
-    "test": "gulp"
+    "test": "tsc --module commonjs jquery-ui-tooltip-tests.ts"
   },
   "keywords": [
     "type definitions jquery-ui-tooltip"

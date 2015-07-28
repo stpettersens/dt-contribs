@@ -1,7 +1,6 @@
 #!/bin/sh
 # Submit a module here to my DefinitelyTyped fork.
 # Usage: sh submit.sh module_name
-
 mkdir ../DefinitelyTyped/$1
 cp $1/$1.d.ts ../DefinitelyTyped/$1
 cp $1/$1-tests.ts ../DefinitelyTyped/$1

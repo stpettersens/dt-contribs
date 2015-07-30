@@ -4,6 +4,6 @@
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare module "lower-case-first" {
-	function lowerCaseFirst(string: string): string;
+	function lowerCaseFirst(string: string, locale?: string): string;
 	export = lowerCaseFirst;
 }

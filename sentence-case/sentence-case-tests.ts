@@ -11,4 +11,3 @@ console.log(sentenceCase('Beyoncé Knowles'));	// => "beyoncé knowles"
 console.log(sentenceCase('A STRING', 'tr'));	// => "a strıng"
 
 console.log(sentenceCase('HELLO WORLD!', null, '_')); // => "hello_world"
-

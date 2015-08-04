@@ -1,0 +1,16 @@
+{
+  "name": "dt-github",
+  "version": "0.0.0",
+  "description": "TypeScript definitions and tests for github",
+  "main": "github.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs github-tests.ts && node github-tests.js"
+  },
+  "keywords": [
+    "type definitions github"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "dependencies": {
+    "github": "^0.2.4"
+  }
+}

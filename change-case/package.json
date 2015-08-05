@@ -4,7 +4,12 @@
   "description": "Type definitions and tests for change-case",
   "main": "change-case.d.ts",
   "dependencies": {
-    "change-case": "~2.3.0"
+    "change-case": "~2.3.0",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-insert": "^0.4.0",
+    "gulp-remove-empty-lines": "0.0.2",
+    "gulp-replace": "^0.5.4"
   },
   "devDependencies": {},
   "scripts": {

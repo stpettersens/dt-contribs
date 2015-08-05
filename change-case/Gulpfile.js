@@ -3,7 +3,6 @@ Generate type definitions and tests for change-case module
 from its constituent modules.
 */
 var gulp = require('gulp'),
-     tsc = require('gulp-typescript'),
   concat = require('gulp-concat'),
      rel = require('gulp-remove-empty-lines'),
   insert = require('gulp-insert'),
@@ -22,23 +21,23 @@ var test_header = '/// <require path="change-case.d.ts" />\r\n\r\n' +
 
 gulp.task('definitions', function() {
     return gulp.src([
-	'../is-upper-case/is-upper-case.d.ts',
-	'../is-lower-case/is-lower-case.d.ts',
-	'../upper-case/upper-case.d.ts',
-	'../upper-case-first/upper-case-first.d.ts',
-	'../lower-case-first/lower-case-first.d.ts',
-	'../lower-case/lower-case.d.ts',
-	'../sentence-case/sentence-case.d.ts',
-	'../title-case/title-case.d.ts',
-	'../camel-case/camel-case.d.ts',
-	'../pascal-case/pascal-case.d.ts',
-	'../snake-case/snake-case.d.ts',
-	'../param-case/param-case.d.ts',
-	'../dot-case/dot-case.d.ts',
-	'../path-case/path-case.d.ts',
-	'../constant-case/constant-case.d.ts',
-	'../swap-case/swap-case.d.ts',
-	'shorthands.lst'
+      	'../is-upper-case/is-upper-case.d.ts',
+      	'../is-lower-case/is-lower-case.d.ts',
+      	'../upper-case/upper-case.d.ts',
+      	'../upper-case-first/upper-case-first.d.ts',
+      	'../lower-case-first/lower-case-first.d.ts',
+      	'../lower-case/lower-case.d.ts',
+      	'../sentence-case/sentence-case.d.ts',
+      	'../title-case/title-case.d.ts',
+      	'../camel-case/camel-case.d.ts',
+      	'../pascal-case/pascal-case.d.ts',
+      	'../snake-case/snake-case.d.ts',
+      	'../param-case/param-case.d.ts',
+      	'../dot-case/dot-case.d.ts',
+      	'../path-case/path-case.d.ts',
+      	'../constant-case/constant-case.d.ts',
+      	'../swap-case/swap-case.d.ts',
+      	'shorthands.txt'
     ])
     .pipe(concat('change-case.d.ts'))
     .pipe(replace(/\/{2}.*\r*\n*/g, '')) // Strip out comments.
@@ -80,14 +79,4 @@ gulp.task('tests', function() {
     .pipe(gulp.dest('.'));
 });
 
-gulp.task('compile', function() {
-    return gulp.src('*.ts')
-    .pipe(tsc({
-	noImplicitAny: true,
-	module: 'commonjs'
-    }))
-    .pipe(gulp.dest('.'));
-});
-
 gulp.task('default', ['definitions', 'tests'], function(){});
-

@@ -6,7 +6,5 @@ import fs = require('fs');
 fs.readFile('bower_components/enchant/enchant.js', 'utf-8', function(err: any, code: string) {
 	eval(code);
 	var game = new Core(10, 10);
-	console.log(game)
+	console.log(game);
 });
-;
-

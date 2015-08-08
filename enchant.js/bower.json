@@ -1,0 +1,24 @@
+{
+    "name": "dt-enchant.js",
+    "version": "0.0.0",
+    "description": "TypeScript definitions and tests for enchant.js",
+    "main": "enchant.d.ts",
+    "dependencies": {
+        "enchant-wise9": "latest"
+    },
+    "authors": [
+        "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
+    ],
+    "keywords": [
+        "type",
+        "definitions",
+        "enchant.js"
+    ],
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

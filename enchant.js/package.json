@@ -8,8 +8,5 @@
   "keywords": [
     "type definitions enchant"
   ],
-  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
-  "dependencies": {
-    "enchant": "~0.2.0"
-  }
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
 }

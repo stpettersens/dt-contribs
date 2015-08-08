@@ -1,5 +1,12 @@
+/// <reference path="../node/node.d.ts" />
 /// <reference path="enchant.d.ts" />
 
-//var game = new Core(10, 10);
-console.log('TODO');
+import fs = require('fs');
+
+fs.readFile('bower_components/enchant/enchant.js', 'utf-8', function(err: any, code: string) {
+	eval(code);
+	var game = new Core(10, 10);
+	console.log(game)
+});
+;
 

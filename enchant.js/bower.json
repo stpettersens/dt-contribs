@@ -4,7 +4,7 @@
     "description": "TypeScript definitions and tests for enchant.js",
     "main": "enchant.d.ts",
     "dependencies": {
-        "enchant-wise9": "latest"
+        "enchant": "latest"
     },
     "authors": [
         "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"

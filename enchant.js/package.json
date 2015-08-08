@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "enchant.d.ts",
   "scripts": {
-    "test": "tsc enchant-tests.ts && node enchant-tests.js"
+    "test": "tsc --module commonjs enchant-tests.ts && node enchant-tests.js"
   },
   "keywords": [
     "type definitions enchant"

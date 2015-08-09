@@ -3,14 +3,16 @@
 // Definitions by: Sam Saint-Pettersen <https://github.com/stpettersens>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-/*
-	From enchant.js core API:
-	http://wise9.github.io/enchant.js/doc/core/en/
-*/
+// Internals:
 
 interface Function {
 	(arg?: any): any;
 }
+
+/*
+	From enchant.js core API:
+	http://wise9.github.io/enchant.js/doc/core/en/
+*/
 
 declare class Action {
 	param: Object;
@@ -44,12 +46,13 @@ declare class Class {
 	static getInheritanceTree(Constructor: Function): Function[];
 }
 
-declare class Core {
+declare class Core  {
+	height: number;
+	width: number;
 	assets: Object;
 	currentScene: Scene;
 	fps: number;
 	frame: number;
-	height: number;
 	input: Object;
 	static instance: Core;
 	loadingScene: Scene;
@@ -57,7 +60,7 @@ declare class Core {
 	rootScene: Scene;
 	running: boolean;
 	scale: number;
-	width: number;
+	sfx: boolean; // Non-standard.
 
 	constructor(width: number, height: number);
 	debug(): Deferred;
@@ -73,7 +76,7 @@ declare class Core {
 	removeScene(scene: Scene): Scene;
 	replaceScene(scene: Scene): Scene;
 	resume(): void;
-	start(deferred: Deferred): Deferred;
+	start(deferred?: Deferred): Deferred;
 	stop(): void;
 	onload: () => void;
 }
@@ -82,39 +85,7 @@ declare class Core {
 Game is an alias for Core;
 you should use Core in your code rather than Game.
 */
-declare class Game {
-	assets: Object;
-	currentScene: Scene;
-	fps: number;
-	frame: number;
-	height: number;
-	input: Object;
-	static instance: Core;
-	loadingScene: Scene;
-	ready: boolean;
-	rootScene: Scene;
-	running: boolean;
-	scale: number;
-	width: number;
-
-	constructor(width: number, height: number);
-	debug(): Deferred;
-	static findExt(path: string): any;
-	getElapsedTime(): number;
-	keybind(key: number, button: string): Core;
-	keyunbind(key: number): Core;
-	load(src: string, alias?: string, callback?: Function, onerror?: Function): Deferred;
-	pause(): void;
-	popScene(): Scene;
-	preload(assets: string|string[]): Core;
-	pushScene(scene: Scene): Scene;
-	removeScene(scene: Scene): Scene;
-	replaceScene(scene: Scene): Scene;
-	resume(): void;
-	start(deferred: Deferred): Deferred;
-	stop(): void;
-	onload: () => void;
-}
+declare class Game extends Core { }
 
 declare class Deferred {
 	call(arg: any): void;
@@ -164,7 +135,7 @@ declare class Entity {
 	within(other: any, distance: number): boolean;
 }
 
-/*declare class Event {
+declare class Event {
 	static A_BUTTON_DOWN: string;
 	static A_BUTTON_UP: string;
 	static ACTION_ADDED: string;
@@ -214,15 +185,15 @@ declare class Entity {
 	y: number;
 
 	constructor(type: string);
-}*/
+}
 
-/*declare class EventTarget {
+declare class EventTarget {
 	addEventListener(type: string, listener: Function): void;
 	clearEventListener(type: string): void;
 	dispatchEvent(e: Event): void;
 	on(type: string, listener: Function): void;
 	removeEventListener(type: string, listener: Function): void;
-}*/
+}
 
 declare class Group {
 	childNodes: Node[];
@@ -234,9 +205,9 @@ declare class Group {
 	scaleX: number;
 	scaleY: number;
 
-	addChild(node: Node): void;
-	insertBefore(node: Node, reference: Node): void;
-	removeChild(node: Node): void;
+	addChild(node: Node|Label|Sprite): void;
+	insertBefore(node: Node|Label|Sprite, reference: Node|Label|Sprite): void;
+	removeChild(node: Node|Label|Sprite): void;
 }
 
 declare class InputManager {
@@ -276,6 +247,12 @@ declare class Label {
 	font: string;
 	text: string;
 	textAlign: string;
+	x: number;
+	y: number;
+	height: number;
+	width: number;
+
+	constructor(text?: string);
 }
 
 declare class LoadingScene {}
@@ -292,7 +269,7 @@ declare class Map {
 	loadData(data: number[][]): void;
 }
 
-/*declare class Node {
+declare class Node {
 	age: number;
 	parentNode: Group;
 	scene: Scene;
@@ -301,20 +278,22 @@ declare class Map {
 
 	moveBy(x: number, y: number): void;
 	moveTo(x: number, y: number): void;
-}*/
+}
 
 declare class ParallelAction {
 	actions: Action[];
 	endedActions: Action[];
 }
 
-declare class Scene {
+declare class Scene extends Group {
 	backgroundColor: string;
 }
 
 declare class Sprite {
 	frame: number|number[];
 	image: Surface;
+	x: number;
+	y: number;
 
 	constructor(width: number, height: number);	
 }

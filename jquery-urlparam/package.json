@@ -1,0 +1,13 @@
+{
+    "name": "dt-jquery-urlparam",
+    "version": "0.0.0",
+    "description": "TypeScript definitions and tests for jquery-urlparam",
+    "main": "jquery-urlparam.d.ts",
+    "scripts": {
+        "test": "tsc --module commonjs jquery-urlparam-tests.ts && node jquery-urlparam-tests.js"
+    },
+    "keywords": [
+        "type definitions jquery-urlparam"
+    ],
+    "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
+}

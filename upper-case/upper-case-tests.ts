@@ -7,4 +7,3 @@ console.log(upperCase('string'));  	 // => "STRING"
 console.log(upperCase('string', 'tr'));	 // => "STRİNG"
 
 console.log(upperCase({ toString: function() { return 'test' } })); // => "TEST"
-

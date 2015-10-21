@@ -8,5 +8,5 @@ node_js:
 
 # Install TypeScript compiler to compile most definitions and test files.
 # Install Bower which is used to retrieve client-side dependencies.
-before_script: npm install -g typescript bower
+before_script: npm install -g typescript bower express
 script: npm test # Invoke dt-contribs test runner.

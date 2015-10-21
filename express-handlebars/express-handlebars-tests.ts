@@ -1,3 +1,5 @@
+/// <reference path="../typings/node/node.d.ts" />
+/// <reference path="../typings/express/express.d.ts" />
 /// <reference path="express-handlebars.d.ts" />
 
 import express = require('express');

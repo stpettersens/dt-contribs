@@ -1,0 +1,16 @@
+{
+  "name": "dt-express-handlebars",
+  "version": "0.0.0",
+  "description": "TypeScript definitions and tests for express-handlebars",
+  "main": "express-handlebars.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs express-handlebars-tests.ts && node express-handlebars-tests.js"
+  },
+  "keywords": [
+    "type definitions express-handlebars"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "dependencies": {
+    "express-handlebars": "^2.0.1"
+  }
+}

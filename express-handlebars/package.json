@@ -11,6 +11,7 @@
   ],
   "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
   "dependencies": {
+  	"express": ">= 4.3.1",
     "express-handlebars": "^2.0.1"
   }
 }

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "ng-bootbox.d.ts",
   "scripts": {
-    "test": "tsc --module commonjs ng-bootbox-tests.ts && node ng-bootbox-tests.js"
+    "test": "tsd install angular bootbox es6-promise && tsc --module commonjs ng-bootbox-tests.ts && node ng-bootbox-tests.js"
   },
   "keywords": [
     "type definitions enchant"

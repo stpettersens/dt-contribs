@@ -4,7 +4,7 @@
   "description": "TypeScript definitions and tests for express-handlebars",
   "main": "express-handlebars.d.ts",
   "scripts": {
-    "test": "tsd install node && tsd install express && tsc --module commonjs express-handlebars-tests.ts && node express-handlebars-tests.js"
+    "test": "tsd install node && tsd install express && tsd install es6-promises && tsc --module commonjs express-handlebars-tests.ts && node express-handlebars-tests.js"
   },
   "keywords": [
     "type definitions express-handlebars"

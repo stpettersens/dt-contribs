@@ -6,7 +6,7 @@
     "test": "tsd install angular bootbox es6-promise && tsc --module commonjs ng-bootbox-tests.ts && node ng-bootbox-tests.js"
   },
   "keywords": [
-    "type definitions enchant"
+    "type definitions ng-bootbox"
   ],
   "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
 }

@@ -1,5 +1,5 @@
 /// <reference path="typings/angular.d.ts" />
-/// <reference path="ng-bootbox.d.ts" />
+/// <reference path="ngbootbox.d.ts" />
 
 class TestBootboxController {
 

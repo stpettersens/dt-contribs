@@ -1,0 +1,12 @@
+{
+  "name": "dt-ng-bootbox.js",
+  "version": "0.0.0",
+  "main": "ng-bootbox.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs ng-bootbox-tests.ts && node ng-bootbox-tests.js"
+  },
+  "keywords": [
+    "type definitions enchant"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "dt-line-reader",
+  "version": "0.0.0",
+  "description": "TypeScript definitions and tests for line-reader",
+  "main": "line-reader.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs line-reader-tests.ts && node line-reader-tests.js"
+  },
+  "keywords": [
+    "type definitions line-reader"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "dependencies": {
+    "line-reader": "^0.3.0"
+  }
+}

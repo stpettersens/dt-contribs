@@ -1,0 +1,16 @@
+{
+  "name": "dt-ua-parser-js",
+  "version": "0.0.0",
+  "description": "TypeScript definitions and tests for ua-parser-js",
+  "main": "ua-parser-js.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs ua-parser-js-tests.ts && node ua-parser-js-tests.js"
+  },
+  "keywords": [
+    "type definitions ua-parser-js"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "dependencies": {
+    "ua-parser-js": "^0.7.9"
+  }
+}

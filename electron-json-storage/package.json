@@ -4,7 +4,7 @@
   "description": "TypeScript definitions and tests for electron-json-storage",
   "main": "electron-json-storage.d.ts",
   "scripts": {
-    "test": "tsc --module commonjs electron-json-storage-tests.ts && node electron-json-storage-tests.js"
+    "test": "tsd install github-electron && tsc --module commonjs electron-json-storage-tests.ts && node electron-json-storage-tests.js"
   },
   "keywords": [
     "type definitions electron-json-storage"

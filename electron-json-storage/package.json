@@ -1,0 +1,17 @@
+{
+  "name": "dt-electron-json-storage",
+  "version": "0.0.0",
+  "description": "TypeScript definitions and tests for electron-json-storage",
+  "main": "electron-json-storage.d.ts",
+  "scripts": {
+    "test": "tsc --module commonjs electron-json-storage-tests.ts && node electron-json-storage-tests.js"
+  },
+  "keywords": [
+    "type definitions electron-json-storage"
+  ],
+  "author": "Sam Saint-Pettersen <s.stpettersen+github@gmail.com>",
+  "dependencies": {
+    "electron": "^0.4.1",
+    "electron-json-storage": "^2.0.0"
+  }
+}

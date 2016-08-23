@@ -1,6 +1,7 @@
 /// <reference path="generic-functions.d.ts" />
 
 import g = require('generic-functions');
+//import * as g from "generic-functions";
 
 var tvShow: Object = {
   seasons: 2,
